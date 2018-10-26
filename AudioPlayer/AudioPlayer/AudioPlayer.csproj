@@ -43,14 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ALbum.cs" />
-    <Compile Include="Artist.cs" />
-    <Compile Include="AudioPlayer.cs" />
-    <Compile Include="Genre.cs" />
-    <Compile Include="Playlist.cs" />
+    <Compile Include="Domains\ALbum.cs" />
+    <Compile Include="Domains\Artist.cs" />
+    <Compile Include="Domains\AudioPlayer.cs" />
+    <Compile Include="Domains\Genres.cs" />
+    <Compile Include="Domains\Playlist.cs" />
+    <Compile Include="Extentions\ExMeth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Song.cs" />
+    <Compile Include="Domains\Song.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace AudioPlayer
 {
-   public class Genre
+    [Flags]
+    public enum Genres
     {
-       public enum genreOfSOng { rock, pop, hiphop, metal, trap}
+        None = 0,
+        Rock = 1,
+        Rap = 2,
+        Metal = 4,
+        Hip_Hop = 8
     }
 }
