@@ -70,7 +70,7 @@ namespace AudioPlayer
             {
                 PlayingSong = Songs[i];
 
-                Console.WriteLine($"Band : {PlayingSong.Artist.Name}\nSong : {PlayingSong.Name}\nLyrics : {PlayingSong.Lyrics}\nGenre: {PlayingSong.Genry}");
+                Console.WriteLine($"Band : {PlayingSong.Artist.Name}\nSong : {Extentions.ExMeth.CutName(PlayingSong.Name)}\nLyrics : {PlayingSong.Lyrics}\nGenre: {PlayingSong.Genry}");
                 Console.WriteLine(new string('*', 30));
                 Thread.Sleep(5000);
                 Console.Clear();

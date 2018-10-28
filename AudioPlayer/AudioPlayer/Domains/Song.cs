@@ -16,6 +16,8 @@ namespace AudioPlayer
 
         public string Name { get; set; }
 
+        
+
         public Song( string lyrics = null, string name = null, Artist artist = null, Genres gen = Genres.None)
         {
             Genry = gen;
