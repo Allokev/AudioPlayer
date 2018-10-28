@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using AudioPlayer.Extentions;
 
 namespace AudioPlayer
 {
@@ -66,11 +67,12 @@ namespace AudioPlayer
         {
             PlayingSongvar = PlayingSong;
 
+
             for (var i = 0; i<Songs.Count;i++)
             {
                 PlayingSong = Songs[i];
-
-                Console.WriteLine($"Band : {PlayingSong.Artist.Name}\nSong : {Extentions.ExMeth.CutName(PlayingSong.Name)}\nLyrics : {PlayingSong.Lyrics}\nGenre: {PlayingSong.Genry}");
+                
+                Console.WriteLine($"Band : {PlayingSong.Artist.Name}\nSong : {PlayingSong.Name.CutName(6)}\nLyrics : {PlayingSong.Lyrics}\nGenre: {PlayingSong.Genry}");
                 Console.WriteLine(new string('*', 30));
                 Thread.Sleep(5000);
                 Console.Clear();

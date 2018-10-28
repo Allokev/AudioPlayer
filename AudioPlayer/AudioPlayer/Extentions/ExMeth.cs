@@ -27,12 +27,12 @@ namespace AudioPlayer.Extentions
 
         //}
 
-        public static string CutName(this string name)
+        public static string CutName(this string name, int number)
         {
             if (name.Length > 6)
             {
                 
-                return name.Substring(0,6).Replace(" ", "")+"...";
+                return name.Substring(0,number).Replace(" ", "")+"...";
             }
             return name;
         }
